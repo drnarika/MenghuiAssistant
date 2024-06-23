@@ -1,0 +1,90 @@
+{
+    "TowardsWakeup": {
+        "next": [
+            "StillInLevelTWU",
+            "AtLevelStartTWU",
+            "NavigateToTowardsWakeUp"
+        ]
+    },
+    "StillInLevelTWU": {
+        "recognition": "OCR",
+        "expected": "放弃本局",
+        "roi": [
+            567,
+            572,
+            151,
+            37
+        ],
+        "action": "Click",
+        "post_wait_freezes": 1,
+        "next": [
+            "ConfirmGiveUp",
+            "AtLevelStartTWU"
+        ]
+    },
+    "ConfirmGiveUp": {
+        "recognition": "TemplateMatch",
+        "template": "Navigation/ConfirmGiveUp.png",
+        "action": "Click",
+        "post_wait_freezes": 1,
+        "next": [
+            "ConfirmGiveUp2",
+            "ConfirmGiveUp",
+            "AtLevelStartTWU"
+        ]
+    },
+    "ConfirmGiveUp2": {
+        "recognition": "TemplateMatch",
+        "template": "Navigation/ConfirmGiveUp2.png",
+        "action": "Click",
+        "post_wait_freezes": 1,
+        "next": [
+            "AtLevelStartTWU"
+        ]
+    },
+    "AtLevelStartTWU": {
+        "recognition": "OCR",
+        "expected": "关卡详情",
+        "post_wait_freezes": 1,
+        "roi": [
+            99,
+            12,
+            132,
+            42
+        ],
+        "action": "DoNothing"
+    },
+    "NavigateToTowardsWakeUp": {
+        "next": [
+            "IFAtHomeTWU",
+            "NavigateToHomeTWU"
+        ]
+    },
+    "IFAtHomeTWU": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/HomeChat.png",
+        "roi": [
+            41,
+            48,
+            31,
+            29
+        ],
+        "pre_wait_freezes": 1,
+        "next": [
+            "StillInLevelTWU",
+            "AtLevelStartTWU",
+            "ClickTowardsWakeup",
+            "ClickPlayMethod",
+            "ClickLevels",
+            "ClickShortcut"
+        ]
+    },
+    "NavigateToHomeTWU": {
+        "next": [
+            "HasBackButton",
+            "HasBackButton_Dark",
+            "CloseMenu",
+            "NavigateToTowardsWakeUp"
+        ]
+    }
+}

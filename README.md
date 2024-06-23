@@ -19,7 +19,9 @@
 
 
 ## 如何开发
->git clone https://github.com/drnarika/MenghuiAssistant
+```
+git clone --recursive https://github.com/drnarika/MenghuiAssistant
+```
 
 从 https://github.com/MaaXYZ/MaaFramework/releases 下载releases包，解压到项目deps文件夹。
 
@@ -37,3 +39,5 @@
 <img src="gulu.gif"></img>
 
 毛茸茸之梦-咕噜 From 无尽梦回
+
+<i>要和咕噜一起玩吗！？</i>

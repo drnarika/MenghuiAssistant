@@ -29,15 +29,19 @@
             "entry": "StartUp"
         },
         {
-            "name": "进行战斗",
-            "entry": "BattleLocate"
+            "name": "直至梦醒",
+            "entry": "TowardsWakeup",
+            "option": [
+                "a",
+                "b"
+            ]
         }
     ],
     "option": {
-        "任务选项1": {
+        "a": {
             "cases": [
                 {
-                    "name": "文本1",
+                    "name": "a",
                     "param": {
                         "OcrTask": {
                             "text": "文本1"
@@ -45,7 +49,27 @@
                     }
                 },
                 {
-                    "name": "文本2",
+                    "name": "b",
+                    "param": {
+                        "OcrTask": {
+                            "text": "文本2"
+                        }
+                    }
+                }
+            ]
+        },
+        "b": {
+            "cases": [
+                {
+                    "name": "a",
+                    "param": {
+                        "OcrTask": {
+                            "text": "文本1"
+                        }
+                    }
+                },
+                {
+                    "name": "b",
                     "param": {
                         "OcrTask": {
                             "text": "文本2"

@@ -1,0 +1,95 @@
+{
+    "HasBackButton": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "Navigation/Back.png",
+        "roi": [
+            51,
+            21,
+            39,
+            34
+        ],
+        "action": "Click",
+        "post_wait_freezes": 1
+    },
+    "HasBackButton_Dark": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "Navigation/Back_Dark.png",
+        "roi": [
+            52,
+            19,
+            42,
+            37
+        ],
+        "action": "Click",
+        "post_wait_freezes": 1
+    },
+    "CloseMenu": {
+        "is_sub": true,
+        "recognition": "TemplateMatch",
+        "template": "StartUp/AnnoX.png",
+        "roi": [
+            1184,
+            31,
+            85,
+            81
+        ],
+        "action": "Click",
+        "post_wait_freezes": 1
+    },
+    "ClickShortcut": {
+        "is_sub": true,
+        "recognition": "OCR",
+        "expected": "快捷",
+        "roi": [
+            1190,
+            17,
+            72,
+            83
+        ],
+        "action": "Click",
+        "post_wait_freezes": 1
+    },
+    "ClickLevels": {
+        "is_sub": true,
+        "recognition": "OCR",
+        "expected": "关卡",
+        "roi": [
+            1125,
+            104,
+            80,
+            67
+        ],
+        "action": "Click",
+        "post_wait_freezes": 1
+    },
+    "ClickChallenge": {},
+    "ClickResource": {},
+    "ClickPlayMethod": {
+        "is_sub": true,
+        "recognition": "OCR",
+        "expected": "玩法",
+        "roi": [
+            117,
+            363,
+            64,
+            32
+        ],
+        "action": "Click",
+        "post_wait_freezes": 1
+    },
+    "ClickTowardsWakeup": {
+        "is_sub": true,
+        "recognition": "OCR",
+        "expected": "直至梦醒",
+        "roi": [
+            952,
+            335,
+            127,
+            30
+        ],
+        "action": "Click",
+        "post_wait_freezes": 1
+    }
+}

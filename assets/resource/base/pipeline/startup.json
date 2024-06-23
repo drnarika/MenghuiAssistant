@@ -1,13 +1,14 @@
 {
     "StartUp": {
         "next": [
-            "AtAnnos",
-            "AtStartup",
-            "AtHome",
+            "Finish",
+            "Sub_AtAnnos",
+            "Sub_AtStartup",
+            "Sub_AtLogin",
             "StartApp"
         ]
     },
-    "AtAnnos": {
+    "Sub_AtAnnos": {
         "recognition": "TemplateMatch",
         "template": "StartUp/AnnoX.png",
         "roi": [
@@ -17,11 +18,9 @@
             50
         ],
         "action": "Click",
-        "next": [
-            "AtStartup"
-        ]
+        "is_sub": true
     },
-    "AtStartup": {
+    "Sub_AtStartup": {
         "recognition": "TemplateMatch",
         "template": "StartUp/StartSleep.png",
         "roi": [
@@ -31,11 +30,21 @@
             30
         ],
         "action": "Click",
-        "next": [
-            "AtHome"
-        ]
+        "is_sub": true
     },
-    "AtHome": {
+    "Sub_AtLogin": {
+        "recognition": "OCR",
+        "expected": "登录",
+        "roi": [
+            562,
+            378,
+            156,
+            35
+        ],
+        "action": "Click",
+        "is_sub": true
+    },
+    "Finish": {
         "recognition": "TemplateMatch",
         "template": "StartUp/HomeChat.png",
         "roi": [
@@ -44,13 +53,11 @@
             31,
             29
         ],
-        "next": [
-            "BattleLocate"
-        ]
+        "action": "StopTask"
     },
     "StartApp": {
         "action": "StartApp",
-        "package": "com.tzyz.meng/com.snapverse.c1.c1Activity",
+        "package": "com.tzyz.meng.bilibili/com.snapverse.c1.c1Activity",
         "next": [
             "StartUp"
         ]
