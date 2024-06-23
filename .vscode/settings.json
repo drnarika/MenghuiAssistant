@@ -6,6 +6,12 @@
                 "/install/resource/**/*.json"
             ],
             "url": "/deps/tools/pipeline.schema.json"
+        },
+        {
+            "fileMatch": [
+                "/assets/interface.json"
+            ],
+            "url": "/deps/tools/interface.schema.json"
         }
     ],
     "[json]": {

@@ -1,0 +1,9 @@
+{
+    "StartApp": {
+        "action": "StartApp",
+        "package": "com.tzyz.meng.bilibili/com.snapverse.c1.c1Activity",
+        "next": [
+            "StartUp"
+        ]
+    }
+}

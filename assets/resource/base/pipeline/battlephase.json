@@ -1,0 +1,6 @@
+{
+    "BattleLocate": {
+        "action": "DoNothing",
+        "next": []
+    }
+}

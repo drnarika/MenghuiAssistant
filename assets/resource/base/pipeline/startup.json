@@ -1,0 +1,58 @@
+{
+    "StartUp": {
+        "next": [
+            "AtAnnos",
+            "AtStartup",
+            "AtHome",
+            "StartApp"
+        ]
+    },
+    "AtAnnos": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/AnnoX.png",
+        "roi": [
+            1226,
+            52,
+            51,
+            50
+        ],
+        "action": "Click",
+        "next": [
+            "AtStartup"
+        ]
+    },
+    "AtStartup": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/StartSleep.png",
+        "roi": [
+            567,
+            508,
+            146,
+            30
+        ],
+        "action": "Click",
+        "next": [
+            "AtHome"
+        ]
+    },
+    "AtHome": {
+        "recognition": "TemplateMatch",
+        "template": "StartUp/HomeChat.png",
+        "roi": [
+            41,
+            48,
+            31,
+            29
+        ],
+        "next": [
+            "BattleLocate"
+        ]
+    },
+    "StartApp": {
+        "action": "StartApp",
+        "package": "com.tzyz.meng/com.snapverse.c1.c1Activity",
+        "next": [
+            "StartUp"
+        ]
+    }
+}
